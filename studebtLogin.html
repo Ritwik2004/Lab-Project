@@ -44,14 +44,14 @@
     </form>
     </div>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyRcZm4ld958D1wIAtATVVfScm_JOf98t2KQ5pEWHhwgbBJWcRl04LkHgwVlpHHE69img/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz3PwCHwBuNdmGWHHWQfxP4-ZVyk3hJ4o1ixDp0FDJyreVwl-cOVKUQ_r5-lxjgkecqJA/exec'
         const form = document.forms['submit-to-google-sheet']
-      
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
         })
       </script>
 </body>

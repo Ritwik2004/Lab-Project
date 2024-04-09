@@ -26,4 +26,3 @@ function SubmitData()
         window.location.reload();
     }, 500);
 }
-
