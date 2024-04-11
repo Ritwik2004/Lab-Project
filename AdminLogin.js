@@ -4,12 +4,18 @@ function CheckLogin(){
     let getpassword=localStorage.getItem("Password");
     let getuserid=localStorage.getItem("UserId");
     // console.log("user : "+getuserid+"\npass : "+getpassword);
-    if(userid===getuserid && password==getpassword)
+    if(getpassword==null || getuserid==null)
     {
-        window.open("https://docs.google.com/spreadsheets/d/1w-ERRzVaUVVKOn70Zk1W8lf2yibm_902Jo9LHxbBMIY/edit?usp=sharing");
+        alert("Please at first signup...");
     }
     else{
-        alert("Please Check User id and Password !!!");
+        if(userid===getuserid && password==getpassword)
+        {
+            window.open("https://docs.google.com/spreadsheets/d/1w-ERRzVaUVVKOn70Zk1W8lf2yibm_902Jo9LHxbBMIY/edit?usp=sharing");
+        }
+        else{
+            alert("Please Check User id and Password !!!");
+        }
     }
 }
 
