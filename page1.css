@@ -102,3 +102,71 @@ body{
   display: none;
   visibility: hidden;
 }
+@media screen and (max-width: 700px){
+  body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(45deg, #ffecd2,#8dd7fa, #6ed1ff, #449bff);
+  }
+  .mainpage1{
+    width: 360px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(25px);
+    border-radius: 35px;
+    box-shadow: 0 0 7px gray;
+  }
+  .student button{
+    height: 45px;
+    width: 180px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #c242fe;
+    font-family: "Petrona-SemiBold", Helvetica;
+    font-weight: 600;
+    border-color: #c242fe;
+    cursor: pointer;
+    border-radius: 98px;
+    /* box-shadow: 10px 10px 30px #aeaec066, -10px -10px 30px #ffffff; */
+  }
+  .admin button{
+    height: 45px;
+    width: 180px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #426bfe;
+    font-family: "Petrona-SemiBold", Helvetica;
+    border-color: #426bfe;
+    cursor: pointer;
+    border-radius: 98px;
+    /* box-shadow: 10px 10px 30px #aeaec066, -10px -10px 30px #ffffff; */
+  }
+  .haldia-institute-of{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: #000000;
+    font-family: "Petrona-SemiBold", Helvetica;
+    padding-top: 50px;
+  }
+  .central-lab{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: #2c2c2c;
+    font-family: "Petrona-SemiBold", Helvetica;
+  }
+}
